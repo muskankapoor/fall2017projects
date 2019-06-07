@@ -1,0 +1,23 @@
+enumerate() is one of the built-in Python functions. It returns an enumerate object. In our case that object is a list of tuples (immutable lists), each containing a pair of count/index and value. Look at http://docs.python.org/library/functions.html?highlight=enumerate#enumerate
+
+Try the following in the python labs
+(here we use another built-in function list([iterable]) which returns a list whose items are the same and in the same order as iterable‘s items).
+
+>>> choices = ['pizza', 'pasta', 'salad', 'nachos']
+>>> list(enumerate(choices))
+=> [(0, 'pizza'), (1, 'pasta'), (2, 'salad'), (3, 'nachos')]
+So, in the for index, item in enumerate(choices): expression index, item is the pair of count, value of each tuple: (0, 'pizza'), (1, 'pasta'), ...
+
+We may easily change the start count/index with help of enumerate(sequence, start=0)
+
+for index, item in enumerate(choices, start = 1):
+    print index, item
+or simply with a number as the second parameter
+
+for index, item in enumerate(choices, 1):
+    print index, item
+in opposite to the lesson's hint
+
+for index, item in enumerate(choices):
+    print index + 1, item
+

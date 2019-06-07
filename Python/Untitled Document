@@ -1,0 +1,14 @@
+def bob(str):
+    words=str.split()
+    for word in words:
+        if str=='':
+            return 'Fine. Be that way!'
+        elif word=='?':
+            return 'Sure.'
+        elif word=='!':
+            return 'Whoa, chie tll out!'
+        else:
+            return 'Whatever'
+        
+print (bob('fuck you!'))
+

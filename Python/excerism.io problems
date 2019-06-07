@@ -1,0 +1,54 @@
+#rotational cipher
+
+
+"""def rotation(number, s):
+    #omg
+    str=''
+    for i in s:
+        y=ord(i)
+        rotation=y+number
+        w=chr(rotation)
+        str=str+w
+    return str
+#ROT5 omg gives trl
+print (rotation(5, "omg"))"""
+
+#difference of two squares
+"""r = range(1, 101)  
+a = sum(r)  
+print (a * a - sum(i*i for i in r))
+
+def square_of_sum(N): #10
+    r=range(1, N+1)
+    a=sum(r)
+    a=a**2
+    return a
+
+def sum_of_square(N):
+    list=[]
+    r=range(1, N+1)
+    for i in r:
+        y=i**2
+        list.append(y)
+    a=sum(list)
+    return a
+
+def difference(N):
+    y=(square_of_sum(N))-(sum_of_square(N))
+    return y
+    
+print (difference(10))
+
+#anagram
+
+def anagrams(anagram, word_list):
+    letters = sorted(anagram.lower())
+    for word in word_list:
+        if sorted(word.lower()) == letters:
+            return word
+        
+    
+print (anagrams("listen", ["enlists", "google", "inlets", "banana"]))"""
+
+#grade school
+
